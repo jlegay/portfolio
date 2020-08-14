@@ -1,0 +1,206 @@
+body {
+  background-color: white;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+/*.head-elements {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-around;
+}*/
+
+h1, h2 {
+  color: rgb(34, 87, 122);
+}
+
+
+.project-card {
+  display: flex;
+  overflow: hidden;
+  height: 15rem;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 3rem;
+}
+
+.project-card:hover {
+  opacity: 0.6;
+  transition-duration: 0.2s;
+}
+
+.project-card-text {
+  padding: 2rem;
+}
+
+.project-card img {
+  border-radius: 5px;
+  height: 100%;
+  width: 20rem;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.project-card p, h6 {
+  color: black;
+}
+
+.project-card:hover {
+  text-decoration: none;
+}
+
+.footer {
+  height: 10rem;
+}
+
+.cookandshare h3 {
+  font-family: 'Pacifico', cursive;
+  color: rgb(237, 59, 90);
+}
+
+.winemeup h3 {
+  color: rgb(182, 122, 129);
+  font-family: 'Nunito', sans-serif;
+}
+
+.artlease h3{
+  color: rgb(99, 183, 175);
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar-lewagon {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+/*  justify-content: space-between;*/
+  float: right;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.head-parts {
+/*  clear: right;*/
+/*  display: flex;
+  justify-content: space-around;*/
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem;
+}
+
+/*.head-parts img {
+  display: block;
+  margin: auto;
+}*/
+
+/*.elements h1, h2 {
+  text-align: center;
+}
+
+.elements h1{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.elements h2{
+  font-size: 2rem;
+  font-weight: 200;
+}
+*/
+
+.head-image {
+  position: relative;
+}
+
+.head-image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}
+
+.presentation-text {
+  padding: 2rem;
+}
+
+.skills-repartition {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-list ul {
+  padding-left: 1rem;
+}
+
+.skills-container h3 {
+  color: rgb(40, 40, 40);
+  border-bottom: 2px solid rgb(34, 87, 122);
+}
+
+.container {
+  margin-top: 3rem;
+}
+
+.presentation-text h1{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.presentation-text h6 {
+  color: rgb(34, 87, 122);
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 0%;
+  left: 27%;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline a {
+  color: rgb(34, 87, 122);
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.list-inline a:hover {
+  opacity: 1;
+}
