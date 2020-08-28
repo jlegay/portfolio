@@ -4,145 +4,321 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="js/bootstrap.min.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
 </head>
 <body>
-
   <div class="container">
 
-    <div class="head-parts">
-      <div class="head-image">
-        <img src="jeanne_legay.jpg" alt="">
-        <ul class="list-inline">
+    <div class="head">
+      <img src="jeanne_legay.jpg" alt="" class="photo">
+      <div class="head-infos">
+        <h1>Jeanne Legay</h1>
+        <h2>Développeuse fullstack</h2>
+        <ul class="list-inline-menu">
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Propos">A propos</a></li>
+        </ul>
+<!--         <ul class="list-inline">
           <li><a href="https://github.com/jlegay" target="_blank"><i class="fab fa-github"></i></a></li>
           <li><a href="https://www.linkedin.com/in/jeanne-legay-06151963" target="_blank"><i class="fab fa-linkedin"></i></a></li>
           <li><a href="mailto:jeanne.legay@hotmail.fr"><i class="fas fa-envelope"></i></a></li>
-        </ul>
+        </ul> -->
       </div>
 
-      <div class="presentation-text">
-        <h1>Jeanne Legay - Développeuse fullstack</h1>
-        <h6>From codes to code</h6>
-        <p>Initialement juriste, j'ai opéré depuis 2015 une reconversation professionnelle :
-         d'abord lentement en me rapprochant des postes "product" orientés vers le technique tout en m'essayant seule
-         au code, puis plus radicalement en effectuant en 2020 la formation "Développement web" du Wagon.
-
-        Passionnée par le code et par toute la créativité qu'il apporte, je recherche des nouveaux projets à développer.
-        </p>
-      </div>
     </div>
 
-    <h1 class="section-title">Projets</h1>
+    <hr class="top-hr hr-portfolio" id="Portfolio"><h1>Portfolio</h1><hr class="hr-bottom-portfolio">
 
-    <a href="https://cookandshare.herokuapp.com" target="_blank" class="project-card-link">
-      <div class="project-card cookandshare">
-        <img src="cookandshare.png" alt="">
-        <div class="project-card-text">
-          <h3>Cook & Share</h3>
-          <h6>Ruby on Rails, HTML, CSS, Git, Heroku</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ducimus aut explicabo. Nostrum atque eveniet ea amet fugit voluptatum, ullam, architecto voluptates eum, facilis dignissimos repudiandae ipsam assumenda incidunt quibusdam.</p>
+    <div class="projets">
+
+      <!-- Button trigger modal -->
+      <div type="button" class="project-card" data-toggle="modal" data-target="#modalCookandShare">
+        <img src="cookandshare3.png" alt="">
+        <div class="projet-card-texte">
+          <div class="projet-div-texte">
+            <p class="projet-card-titre">Cook & Share</p>
+            <p class="projet-card-description">Site de partage de recettes. V1 en ligne (inscription, connexion, publication, édition de recettes, recherches ElasticSearch). V2 en cours de développement (création de groupes d'utilisateurs).</p>
+          </div>
+          <div class="projet-div-technos">
+            <ul class="projet-card-technos list-inline-projet">
+              <li>Ruby on Rails</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </a>
 
-    <a href="https://winemeup.wine" target="_blank" class="project-card-link">
-      <div class="project-card winemeup">
-        <img src="winemeup.png" alt="">
-        <div class="project-card-text">
-          <h3>Wine Me Up</h3>
-          <h6>Ruby on Rails, HTML, CSS, Git, Heroku</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ducimus aut explicabo. Nostrum atque eveniet ea amet fugit voluptatum, ullam, architecto voluptates eum, facilis dignissimos repudiandae ipsam assumenda incidunt quibusdam.</p>
+      <!-- Modal -->
+      <div class="modal fade" id="modalCookandShare" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Cook & Share</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="carouselCookShareIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselCookShareIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselCookShareIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselCookShareIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block caroussel-img" src="cookandshare3.png", crop: fill, alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block caroussel-img" src="cookandshare7.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block caroussel-img" src="cookandshare6.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselCookShareIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselCookShareIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <a href="https://cookandshare.herokuapp.com" class="btn btn-red" target="_blank">Voir le site</a>
+              </div>
+          </div>
         </div>
       </div>
-    </a>
-
-    <a href="https://artlease.herokuapp.com" target="_blank" class="project-card-link">
-      <div class="project-card artlease">
-        <img src="artpieces.png" alt="">
-        <div class="project-card-text">
-          <h3>ArtLease</h3>
-          <h6>Ruby on Rails, HTML, CSS, Git, Heroku</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ducimus aut explicabo. Nostrum atque eveniet ea amet fugit voluptatum, ullam, architecto voluptates eum, facilis dignissimos repudiandae ipsam assumenda incidunt quibusdam.</p>
+      <!-- Button trigger modal -->
+      <div type="button" class="project-card" data-toggle="modal" data-target="#modalwinemeup">
+        <img src="winemeup3.png" alt="">
+        <div class="projet-card-texte">
+          <div class="projet-div-texte">
+            <p class="projet-card-titre">WineMeUp</p>
+            <p class="projet-card-description">Site de recherches de bouteilles de vin, filtrées grâce aux réponses de l'utilisateur à un questionnaire. Questionnaire dynamique réalisé avec Bootstrap & JavaScript.</p>
+          </div>
+          <div class="projet-div-technos">
+            <ul class="projet-card-technos list-inline-projet">
+              <li>Ruby on Rails</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </a>
 
-    <h1 class="section-title">Skills</h1>
+      <!-- Modal -->
+      <div class="modal fade" id="modalwinemeup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">WineMeUp (projet de groupe réalisé au Wagon)</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="carouselWineMeUpIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselWineMeUpIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselWineMeUpIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselWineMeUpIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselWineMeUpIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block caroussel-img" src="winemeup3.png", crop: fill, alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block caroussel-img" src="WineMeUp6.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block caroussel-img" src="WineMeUp7.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block caroussel-img" src="WineMeUp9.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselWineMeUpIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselWineMeUpIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <a href="https://winemeup.wine" class="btn btn-red" target="_blank">Voir le site</a>
+              </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="skills-container">
-      <h3>Hard skills</h3>
-      <div class="skills-repartition">
+
+      <!-- Button trigger modal -->
+      <div type="button" class="project-card" data-toggle="modal" data-target="#modalArtLease">
+        <img src="artlease3.png" alt="">
+        <div class="projet-card-texte">
+          <div class="projet-div-texte">
+            <p class="projet-card-titre">ArtLease</p>
+            <p class="projet-card-description">Clône Airbnb de location d'oeuvres d'art (inscription, connexion, ajout d'oeuvres d'art, commentaires, recherche).</p>
+          </div>
+          <div class="projet-div-technos">
+            <ul class="projet-card-technos list-inline-projet">
+              <li>Ruby on Rails</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modalArtLease" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">ArtLease (projet de groupe réalisé au Wagon)</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="carouselArtLeaseIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselArtLeaseIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselArtLeaseIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselArtLeaseIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselArtLeaseIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block caroussel-img" src="artlease3.png", crop: fill, alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block caroussel-img" src="ArtLease4.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block caroussel-img" src="ArtLease8.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block caroussel-img" src="ArtLease9.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselArtLeaseIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselArtLeaseIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <a href="http://artlease.herokuapp.com" class="btn btn-red" target="_blank">Voir le site</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <hr class="top-hr hr-skills" id="Skills"><h1>Skills</h1><hr>
+
+    <div class="skills">
+      <div class="skills-card" id="hard-skills-card">
+        <div class="skills-card-name" id="hard-skills-card-name">
+          <p>Hard skills</p>
+        </div>
         <div class="skills-list">
-          <h4>Backend</h4>
           <ul>
             <li>Ruby On Rails</li>
             <li>Ruby</li>
-          </ul>
-        </div>
-        <div class="skills-list">
-          <h4>Frontend</h4>
-          <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>Bootstrap</li>
-          </ul>
-        </div>
-        <div class="skills-list">
-          <h4>Devops</h4>
-          <ul>
-            <li>Heroku</li>
-            <li>GitHub</li>
-          </ul>
-        </div>
-        <div class="skills-list">
-          <h4>Data</h4>
-          <ul>
-            <li>Postgresql</li>
-          </ul>
-        </div>
-        <div class="skills-list">
-          <h4>Project Management</h4>
-          <ul>
             <li>Trello</li>
             <li>Slack</li>
             <li>JIRA</li>
           </ul>
         </div>
       </div>
-      <h3>Soft skills</h3>
-      <div class="skills-list">
-        <ul>
-          <li>Travail en équipe</li>
-          <li>Ecoute</li>
-          <li>Fiablilité</li>
-          <li>Curiosité</li>
-          <li>Prise de décision</li>
-          <li>Communication</li>
-        </ul>
+      <div class="skills-card" id="soft-skills-card">
+        <div class="skills-card-name" id="soft-skills-card-name">
+          <p>Soft skills</p>
+        </div>
+        <div class="skills-list">
+          <ul>
+            <li>Anglais</li>
+            <li>Travail en équipe</li>
+            <li>Ecoute</li>
+            <li>Fiablilité</li>
+            <li>Curiosité</li>
+            <li>Prise de décision</li>
+            <li>Communication</li>
+          </ul>
+        </div>
       </div>
-      <h3>Very soft skills</h3>
-      <div class="skills-list">
-        <ul>
-          <li>Résolution de Rubiks Cube en moins de 3 minutes</li>
-          <li>Maniement de la Becane Bowser (au volant !) 🏍 </li>
-          <li>Traite de chèvres 🐐</li>
-          <li>Compréhension de l'accent irlandais 🍀</li>
-          <li>Blind-tests (en particulier la musique française du début 2000) 🎤</li>
-        </ul>
+      <div class="skills-card" id="very-soft-skills-card">
+        <div class="skills-card-name" id="very-soft-skills-card-name">
+          <p>Very soft skills</p>
+        </div>
+        <div class="skills-list">
+          <ul>
+            <li>Résolution de Rubiks Cube en moins de 3 minutes</li>
+            <li>Maniement de la Becane Bowser (au volant !) 🏍 </li>
+            <li>Traite de chèvres 🐐</li>
+            <li>Compréhension de l'accent irlandais 🍀</li>
+          </ul>
+        </div>
       </div>
 
-    <div class="footer">
-      blablabla
     </div>
 
+    <hr class="top-hr-propos" id="Propos"><h1>A propos</h1><hr class="bottom-hr-propos">
+    <div class="a-propos">
+      <img src="nyc_jeanne.jpeg" alt="" class="photo photo-propos">
+      <h6>From codes to code</h6>
+      <p>Initialement juriste, j'ai opéré depuis 2015 une reconversation professionnelle :
+       d'abord lentement en me rapprochant des postes "product" orientés vers le technique tout en m'essayant seule
+       au code, puis plus radicalement en effectuant en 2020 la formation "Développement web" du Wagon.
 
-
+      Passionnée par le code et par toute la créativité qu'il apporte, je recherche de nouveaux projets à développer.
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-container">
+      <div class="contact">
+        <p>Contact:</p>
+        <a href="mailto:jeanne.legay@hotmail.fr" class="contact-titre">jeanne.legay@hotmail.fr</p>
+      </div>
+      <div class="contacts-liste">
+        <ul class="list-inline">
+          <li><a href="https://github.com/jlegay" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jeanne-legay-06151963" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="mailto:jeanne.legay@hotmail.fr"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
-</html>
