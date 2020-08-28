@@ -6,10 +6,10 @@
 }
 
 .head {
-  width: 50%;
-  margin: auto;
+/*  width: 50%;*/
+/*  margin: auto;*/
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 2rem;
 }
 
@@ -19,7 +19,7 @@
   width: 50%;
   margin: auto;
   background-color: white;
-  margin-top: 3rem;
+/*  margin-top: 3rem;*/
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
@@ -115,7 +115,8 @@ body {
   width: 20rem;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2)
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 0 3px;
 }
 
 .project-card img {
@@ -173,7 +174,7 @@ body {
 }
 
 .footer-container {
-  width: 80%;
+  width: 75%;
   display: flex;
   justify-content: space-around;
   margin-left: auto;
@@ -276,7 +277,8 @@ h1 {
 
 .list-inline-menu {
   list-style: none;
-  margin-top: 18px;
+  margin-top: 40px;
+  padding: 0;
 }
 
 .list-inline-menu > li {
@@ -286,17 +288,21 @@ h1 {
 .list-inline-menu a {
 /*  color: #b5838d;*/
   text-decoration: none;
-  color: rgb(237, 59, 90);
+/*  color: rgb(237, 59, 90);
   border: 1px solid rgb(237, 59, 90);
-  border-bottom-width: 2px;
-  padding: 3px;
-  margin: 12px;
+  border-bottom-width: 2px;*/
+  padding: 8px;
+/*  margin: 7px;*/
+  background-color: rgb(237, 59, 90);
+  color: white;
+  border: 1px solid rgb(237, 59, 90);
 }
 
 .list-inline-menu a:hover {
-  background-color: rgb(237, 59, 90);
-  color: white;
-  transition-duration: 0.3s;
+  background-color: white;
+  color: rgb(237, 59, 90);
+  transition-duration: 0.5s;
+  border: 1px solid rgb(237, 59, 90);
 
 }
 
@@ -309,3 +315,43 @@ h1 {
   color: #212529;
 }
 
+.section-title {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+#soft-skills-card {
+  margin-top: 3rem;
+}
+
+#very-soft-skills-card {
+  margin-top: 3rem;
+}
+
+.main-title {
+  font-weight: 600;
+  font-size: 65px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#title-propos {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#texte-propos {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}

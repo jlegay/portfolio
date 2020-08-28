@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="js/bootstrap.min.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -17,15 +17,19 @@
   <div class="container">
 
     <div class="head">
-      <img src="nyc_jeanne.jpeg" alt="" class="photo">
+<!--       <img src="nyc_jeanne.jpeg" alt="" class="photo"> -->
       <div class="head-infos">
-        <h1>Jeanne Legay</h1>
-        <h2>Développeuse fullstack</h2>
-        <ul class="list-inline-menu">
-          <li><a href="#Portfolio">Portfolio</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Propos">A propos</a></li>
-        </ul>
+        <h1 class="main-title">Jeanne Legay</h1>
+        <h2 class="subtitle">Développeuse fullstack</h2>
+        <div class="list-container">
+          <div class="list-subcontainer">
+            <ul class="list-inline-menu">
+              <li><a href="#Portfolio">Portfolio</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#Propos">A propos</a></li>
+            </ul>
+          </div>
+        </div>
 <!--         <ul class="list-inline">
           <li><a href="https://github.com/jlegay" target="_blank"><i class="fab fa-github"></i></a></li>
           <li><a href="https://www.linkedin.com/in/jeanne-legay-06151963" target="_blank"><i class="fab fa-linkedin"></i></a></li>
@@ -35,7 +39,7 @@
 
     </div>
 
-    <hr class="top-hr hr-portfolio" id="Portfolio"><h1>Portfolio</h1><hr class="hr-bottom-portfolio">
+    <h1 class="section-title" id="Portfolio">Portfolio</h1>
 
     <div class="projets">
 
@@ -241,7 +245,7 @@
     </div>
 
 
-    <hr class="top-hr hr-skills" id="Skills"><h1>Skills</h1><hr>
+    <!-- <hr class="top-hr hr-skills" id="Skills"> --><h1 class="section-title" id="Skills">Skills</h1>
 
     <div class="skills">
       <div class="skills-card" id="hard-skills-card">
@@ -294,11 +298,11 @@
 
     </div>
 
-    <hr class="top-hr-propos" id="Propos"><h1>A propos</h1><hr class="bottom-hr-propos">
+<!--     <hr class="top-hr-propos" id="Propos"> --><h1 class="section-title" id="Propos">A propos</h1><!-- <hr class="bottom-hr-propos"> -->
     <div class="a-propos">
-      <img src="jeanne_legay.jpg" alt="" class="photo photo-propos">
-      <h6>From codes to code</h6>
-      <p>Initialement juriste, j'ai opéré depuis 2015 une reconversation professionnelle :
+      <img src="nyc_jeanne.jpeg" alt="" class="photo photo-propos">
+      <h6 id="title-propos">From codes to code</h6>
+      <p id="texte-propos">Initialement juriste, j'ai opéré depuis 2015 une reconversation professionnelle :
        d'abord lentement en me rapprochant des postes "product" orientés vers le technique tout en m'essayant seule
        au code, puis plus radicalement en effectuant en 2020 la formation "Développement web" du Wagon.
 
