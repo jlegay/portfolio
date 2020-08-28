@@ -50,7 +50,7 @@
 }
 
 #hard-skills-card-name {
-  background-color: #e5989b;
+  background-color: rgb(237, 59, 90);
 }
 
 #hard-skills-card-name p {
@@ -72,11 +72,13 @@
 }
 
 #soft-skills-card-name {
-  background-color: #ffb4a2;
+  background-color: rgb(237, 59, 90);
+  opacity: 0.9;
 }
 
 #very-soft-skills-card-name {
-  background-color: #ffcdb2;
+  background-color: rgb(237, 59, 90);
+  opacity: 0.8;
 }
 
 body {
