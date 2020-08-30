@@ -124,11 +124,16 @@ body {
   margin: 2%;
 }
 
-.projets {
+/*.projets {
   display: flex;
   justify-content: space-between;
-}
+}*/
 
+.projets-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
 
 .list-inline-projet {
   list-style: none;
@@ -175,8 +180,8 @@ body {
 
 .footer-container {
   width: 75%;
-  display: flex;
-  justify-content: space-around;
+/*  display: flex;
+  justify-content: space-around;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -354,4 +359,236 @@ h1 {
   width: 85%;
   margin: 0 auto;
   margin-top: 1rem;
+}
+
+/*Smallest device*/
+@media (min-width: 100px) and (max-width: 575px) {
+  .projets-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .list-inline-projet {
+    margin-left: 3.5rem;
+  }
+
+  .projet-div-texte {
+    height: 9rem;
+  }
+
+  #card-winemeup-projet-div{
+    height: 8rem;
+  }
+
+  .projet-card-description {
+    padding: 0 5px;
+  }
+
+  .section-title {
+    margin-top: 4rem;
+  }
+
+  .skills-card {
+    width: 100%;
+  }
+
+  .skills-list {
+    padding: 1rem 1rem 1rem 0;
+    font-size: 14px;
+  }
+
+  .skills-card-name {
+    width: 40%;
+  }
+
+  #hard-skills-card-name p {
+    top: 37%;
+    left: -4%;
+  }
+
+  #soft-skills-card-name p {
+    top: 34%;
+    left: -4%;
+  }
+
+  #very-soft-skills-card-name p {
+    top: 38%;
+    left: 1%;
+  }
+
+  .list-inline {
+    text-align: center;
+  }
+  .contact{
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .projets-container {
+      grid-template-columns: 1fr;
+    }
+
+    .project-card {
+      width: 100%;
+      height: 33rem;
+    }
+
+    .list-inline-projet {
+      margin-left: 15px;
+    }
+
+    .projet-div-texte {
+      height: 9rem;
+    }
+
+    #card-winemeup-projet-div{
+      height: 8rem;
+    }
+
+    .projet-card-description {
+      padding: 0 15px;
+    }
+
+    .projet-div-technos {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-title {
+      margin-top: 4rem;
+    }
+
+    .skills-card {
+      width: 100%;
+    }
+
+    .skills-list {
+      padding: 1rem 1rem 1rem 0;
+      font-size: 14px;
+    }
+
+    .skills-card-name {
+      width: 40%;
+    }
+
+    #hard-skills-card-name p {
+      top: 43%;
+      left: 8%;
+    }
+
+    #soft-skills-card-name p {
+      top: 42%;
+      left: 8%;
+    }
+
+    #very-soft-skills-card-name p {
+      top: 35%;
+      left: 1%;
+    }
+
+    .list-inline {
+      text-align: center;
+    }
+    .contact{
+      text-align: center;
+      padding-top: 1rem;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .projets-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #hard-skills-card-name p {
+    top: 43%;
+    left: 19%;
+  }
+
+  #soft-skills-card-name p {
+    top: 42%;
+    left: 19%;
+  }
+
+  #very-soft-skills-card-name p {
+    top: 41%;
+    left: 5%;
+  }
+
+  .projet-div-technos {
+    width: 90%;
+  }
+
+  .projet-card-technos {
+    margin-top: 7rem;
+  }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .projets-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .projets-container {
+    grid-gap: 70px;
+  }
+
+  .skills-card {
+    width: 50%;
+  }
+
+  #hard-skills-card-name p {
+    top: 43%;
+    left: 19%;
+  }
+
+  #soft-skills-card-name p {
+    top: 42%;
+    left: 19%;
+  }
+
+  #very-soft-skills-card-name p {
+    top: 41%;
+    left: 5%;
+  }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .projets-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #hard-skills-card-name p {
+    top: 43%;
+    left: 14%;
+  }
+
+  #soft-skills-card-name p {
+    top: 42%;
+    left: 14%;
+  }
+
+  #very-soft-skills-card-name p {
+    top: 34%;
+    left: 1%;
+  }
 }
