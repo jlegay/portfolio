@@ -114,7 +114,6 @@ body {
   height: 28rem;
   width: 20rem;
   background-color: white;
-  border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   padding: 0 3px;
 }
@@ -534,6 +533,10 @@ h1 {
 
   .projet-card-technos {
     margin-top: 7rem;
+  }
+
+  .project-card {
+    border-radius: 5px;
   }
 }
 
